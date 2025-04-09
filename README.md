@@ -10,7 +10,8 @@ This project is a learning exercise to explore Rust basics, algorithms, and proj
 ```
 src/
 ├── main.rs 
-└── levenshtein.rs 
+├── levenshtein.rs 
+└── spellchecker.rs 
 ```
 
 ## 🚀 Getting Started
@@ -32,6 +33,8 @@ cargo test
 ## 📦 Features
 
 - Calculates Levenshtein distance between two strings
+- Spell checker using Levenshtein distance
+  -> Suggests the closest word from a dictionary for a given input
 - Includes unit and integration tests
 - Modular project structure
 
@@ -39,11 +42,20 @@ cargo test
 
 ```
 Distance de Levenshtein entre "chat" et "chats" : 1
+
+Mot recherché: chzt
+Suggestions:
+- chat
 ```
 
 ## 🧠 Notes
 
 - For simplicity, this implementation assumes ASCII strings. Unicode support would require working with `.chars()` instead of `.as_bytes()`.
+
+## ✅ TODO
+- [ ] Import dictionary from a file (spellchecker)
+- [ ] Build CLI to check spelling
+- [ ] Build little API to use tools easily through other projects
 
 ## 📚 License
 
