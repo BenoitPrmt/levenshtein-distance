@@ -1,0 +1,8 @@
+[package]
+name = "levenshtein-distance"
+description = "A simple implementation of the Levenshtein distance algorithm in Rust."
+version = "0.1.0"
+edition = "2021"
+authors = ["BenoitPrmt"]
+
+[dependencies]
